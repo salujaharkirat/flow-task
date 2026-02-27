@@ -31,6 +31,8 @@ SITE_ID = 1
 
 # Application definition
 
+AUTH_USER_MODEL = 'users.CustomUser'
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -47,6 +49,7 @@ INSTALLED_APPS = [
     "allauth.socialaccount",
     'dj_rest_auth',
     'dj_rest_auth.registration',
+    'users',
 ]
 
 REST_AUTH = {
